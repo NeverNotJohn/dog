@@ -1,5 +1,6 @@
 body {
     height: 4500px;
+    font-style: 'sf';
 }
 
 @font-face {
@@ -23,8 +24,9 @@ body {
 }
 
 .phone {
+    display: block;
     position: absolute;
-    width: 15.5vw;
+    width: 13.5vw;
     font-family: 'sf';
     font-size: 1vw;
     overflow: hidden;
@@ -41,17 +43,51 @@ body {
 }
 
 .bubble-button {
-    display: inline-block;
     padding: 5px 10px;
     border-radius: 50px;
     background-color: #FFFFFF; /* Bootstrap primary color */
     color: #000; /* Text color */
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.05s ease-in-out;
     max-width: 15vw;
     max-height: 5vh;
     z-index: 2;
 }
 
+button {
+    z-index: 2;
+}
+
+button:active {
+    transform: scale(0.75); /* Adjust scale factor as needed */
+    background-color: #fbc9eb; /* Choose a different color */
+}  
+
+.pog {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'sf';
+    text-align: center;
+    font-style: bold;
+    z-index: 2;
+}
+
+.mt-10 {
+    margin-top: 10vh;
+}
+
+.newLine {
+    display: block;
+}
+
+
+div img {
+    width: 100%;
+}
+
+div button {
+    margin-bottom: 1vh;
+}
 
 /* IDs */
 
