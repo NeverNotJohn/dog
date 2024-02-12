@@ -3,6 +3,10 @@ body {
     font-style: 'sf';
 }
 
+p {
+    font-size: 1.8vh;
+}
+
 @font-face {
     font-family: 'sf';
     src: url('static/fonts/SF-Pro-Display-Light.otf');
@@ -29,11 +33,14 @@ body {
     width: 13.5vw;
     font-family: 'sf';
     font-size: 1vw;
-    overflow: hidden;
 }
 
 .wid {
     max-width: 15.5vw;
+}
+
+.wif {
+    width: 15vw;
 }
 
 .hcenter {
@@ -74,6 +81,14 @@ button:active {
 
 .mt-10 {
     margin-top: 10vh;
+}
+
+.mt-15 {
+    margin-top: 15vh;
+}
+
+.mt-30 {
+    margin-top: 30vh;
 }
 
 .newLine {
@@ -122,4 +137,8 @@ div button {
 #killMe {
     width: 100%;
     object-fit: cover;
+}
+
+#ge {
+    width: 30vw;
 }
