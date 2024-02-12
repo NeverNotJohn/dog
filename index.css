@@ -4,7 +4,7 @@ body {
 
 @font-face {
     font-family: 'sf';
-    src: url('static/fonts/SF-Pro-Display-Black.otf');
+    src: url('static/fonts/SF-Pro-Display-Light.otf');
 }
 
 /* Classes */
@@ -24,6 +24,16 @@ body {
     font-family: 'sf';
     font-size: 1vw;
     overflow: hidden;
+}
+
+.wid {
+    max-width: 15.5vw;
+}
+
+.hcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* IDs */
