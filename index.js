@@ -3,6 +3,9 @@ let jo_p = 0;
 let score = 0;
 let index = 1;
 
+let kids = new Audio('static/audio/kids.mp3');
+let sad = new Audio('static/audio/sad.mp3')
+
 // Cat
 
 cat_brittney = document.getElementById('cat_brittney');
@@ -43,6 +46,7 @@ function correct(button) {
         button.style.backgroundColor = 'green';
         score++;
         index++;
+        kids.play();
     }
 
     switch (index) {
@@ -96,6 +100,7 @@ function incorrect(button) {
     {
         button.style.backgroundColor = 'red';
         score--;
+        sad.play();
     }
 
 }

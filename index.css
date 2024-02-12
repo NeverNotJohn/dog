@@ -101,7 +101,6 @@ button:active {
     z-index: 999999;
     background-color: #222222;
     width: 18vw;
-    height: 10vw;
     border-radius: 10px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
     right: 4vh;
