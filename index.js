@@ -1,7 +1,7 @@
 let cat_p = 0;
 let jo_p = 0;
 let score = 0;
-let index = 0;
+let index = 1;
 
 // Cat
 
@@ -30,8 +30,8 @@ jo_trescal = document.getElementById('jo_trescal');
 jo_nando = document.getElementById('jo_nando');
 
 function start() {
-
-    index++;
+    cat_brittney.classList.remove('hidden');
+    jo_brittney.classList.remove('hidden');
 }
 
 function correct(button) {
@@ -42,40 +42,46 @@ function correct(button) {
     {
         button.style.backgroundColor = 'green';
         score++;
+        index++;
     }
 
     switch (index) {
-        case 1:
-            
-            break;
         case 2:
-            
+            cat_frances.classList.remove('hidden');
+            jo_frances.classList.remove('hidden');
             break;
         case 3:
-            
+            cat_george.classList.remove('hidden');
+            jo_george.classList.remove('hidden');
             break;
         case 4:
-            
+            cat_carlos.classList.remove('hidden');
+            jo_carlos.classList.remove('hidden');
             break;
         case 5:
-            
+            cat_nick.classList.remove('hidden');
+            jo_nick.classList.remove('hidden');
             break;
         case 6:
-            
+            cat_nylah.classList.remove('hidden');
+            jo_nylah.classList.remove('hidden');
             break;
         case 7:
-            
+            cat_mana.classList.remove('hidden');
+            jo_mana.classList.remove('hidden');
             break;
         case 8:
-            
+            cat_ray.classList.remove('hidden');
+            jo_ray.classList.remove('hidden');
             break;
         case 9:
-            
+            cat_trescal.classList.remove('hidden');
+            jo_trescal.classList.remove('hidden');
             break;
         case 10:
-            
+            cat_nando.classList.remove('hidden');
+            jo_nando.classList.remove('hidden');
             break;
-    
         default:
             break;
     }
