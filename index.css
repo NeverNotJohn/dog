@@ -36,7 +36,24 @@ body {
     align-items: center;
 }
 
+.bubble-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #FFFFFF; /* Bootstrap primary color */
+    color: #000; /* Text color */
+    transition: transform 0.3s ease-in-out;
+    max-width: 15vw;
+    max-height: 5vh;
+    z-index: 2;
+}
+
+
 /* IDs */
+
+#hmm {
+    z-index: 1;
+}
 
 #cat {
     left: 23.3vw;
@@ -48,4 +65,14 @@ body {
     left: 60.7vw;
     top: 40vh;
     color: white;
+}
+
+#top {
+    z-index: 99;
+    height: 21.5vh;
+}
+
+#bot {
+    z-index: 99;
+    height: 14vh;
 }
