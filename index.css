@@ -95,6 +95,38 @@ button:active {
     display: block;
 }
 
+.discord {
+    padding: 8px;
+    color: white;
+    z-index: 999999;
+    background-color: #222222;
+    width: 18vw;
+    height: 10vw;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+    right: 4vh;
+    bottom: 4vh;
+    border: 2px solid #3c3c3c;
+    overflow: hidden;
+}
+
+.d_img {
+    width: 5vh;
+    height: 5vh;
+    margin-right: 1vh;
+}
+
+.d_p {
+    width: 14vw;
+    height: 100%;
+    font-size: 16px;
+}
+
+
+.flex {
+    display: flex;
+}
+
 
 div img {
     width: 100%;
