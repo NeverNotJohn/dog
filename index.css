@@ -13,6 +13,10 @@ body {
     width: 100vw;
 }
 
+.fh {
+    height: 100vh;
+}
+
 .top {
     position: absolute;
     top: 0px;
@@ -74,5 +78,12 @@ body {
 
 #bot {
     z-index: 99;
-    height: 14vh;
+    width: 100vw;
+    height: 12.5vh;
+    overflow: hidden;
+}
+
+#killMe {
+    width: 100%;
+    object-fit: cover;
 }
