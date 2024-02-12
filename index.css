@@ -2,6 +2,11 @@ body {
     height: 4500px;
 }
 
+@font-face {
+    font-family: 'sf';
+    src: url('static/fonts/SF-Pro-Display-Black.otf');
+}
+
 /* Classes */
 
 .fw {
@@ -13,3 +18,24 @@ body {
     top: 0px;
 }
 
+.phone {
+    position: absolute;
+    width: 15.5vw;
+    font-family: 'sf';
+    font-size: 1vw;
+    overflow: hidden;
+}
+
+/* IDs */
+
+#cat {
+    left: 23.3vw;
+    top: 40vh;
+    color: black;
+}
+
+#jo {
+    left: 60.7vw;
+    top: 40vh;
+    color: white;
+}
