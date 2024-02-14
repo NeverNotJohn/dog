@@ -4,7 +4,10 @@ let score = 0;
 let index = 1;
 
 let kids = new Audio('static/audio/kids.mp3');
-let sad = new Audio('static/audio/sad.mp3')
+let sad = new Audio('static/audio/sad.mp3');
+let ping = new Audio('static/audio/ping.mp3');
+
+const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 // Cat
 
@@ -32,9 +35,15 @@ jo_ray = document.getElementById('jo_ray');
 jo_trescal = document.getElementById('jo_trescal');
 jo_nando = document.getElementById('jo_nando');
 
+// Other
+let ah = document.getElementById('discord');
+
+
 function start() {
     cat_brittney.classList.remove('hidden');
     jo_brittney.classList.remove('hidden');
+    
+
 }
 
 function correct(button) {
@@ -51,6 +60,7 @@ function correct(button) {
 
     switch (index) {
         case 2:
+            discord('Brittney',"Hello World",'static/images/art/brittney.jpg');
             cat_frances.classList.remove('hidden');
             jo_frances.classList.remove('hidden');
             break;
@@ -103,4 +113,20 @@ function incorrect(button) {
         sad.play();
     }
 
+}
+
+async function discord(name,text,img_path) {
+
+    await sleep(3500);
+
+    ping.play();
+
+    ah.style.left = "1822px";
+    $('#discord').animate({left: '1322px'});
+    let d_text = document.getElementById('d_text');
+    let d_name = document.getElementById('d_name');
+    let d_img = document.getElementById('d_img');
+    d_text.textContent = `${text}`;
+    d_name.textContent = `${name}`;
+    d_img.src = `${img_path}`;
 }

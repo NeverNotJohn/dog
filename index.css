@@ -103,10 +103,11 @@ button:active {
     width: 18vw;
     border-radius: 10px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
-    right: 4vh;
+    right: -4000vh;
     bottom: 4vh;
     border: 2px solid #3c3c3c;
     overflow: hidden;
+    padding-bottom: 3px;
 }
 
 .d_img {
