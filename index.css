@@ -95,6 +95,22 @@ button:active {
     display: block;
 }
 
+#M {
+    font-size: 300px;
+}
+
+#final {
+    height: 100vh;
+    background-color: #f5b5b8;
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+}
+
+.big {
+    font-size: 100px;
+}
+
 .discord {
     padding: 8px;
     color: white;
@@ -177,4 +193,31 @@ div button {
 
 #ge {
     width: 30vw;
+}
+
+
+#text {
+    height: 37vh;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+.centered-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dance {
+    width: 50px;
+}
+
+#front {
+    background-color: #f5b5b8;
+    height: 1000vh;
+}
+
+.smol {
+    width: 10vw;
 }

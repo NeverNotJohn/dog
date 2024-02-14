@@ -37,7 +37,7 @@ jo_nando = document.getElementById('jo_nando');
 
 // Other
 let ah = document.getElementById('discord');
-
+let all = document.getElementById('all');
 
 function start() {
     cat_brittney.classList.remove('hidden');
@@ -99,7 +99,16 @@ function correct(button) {
             jo_nando.classList.remove('hidden');
             break;
         case 11:
-            discord('SaltyIndeed',"happy bday my senile, memory impared, cognitive deteriorated, forgetful, dory-ass, declining mantal acuitit, senior movement, cognitively frail, 4 foot 2, fun-sized, prime dunk on size, compact edition, vertically challenged, low altitude, pint-sized, little bean, too short to use the bar, microscopic, compact DDR pardner :)",'static/images/pfps/john.webp');
+            f = document.getElementById('final');
+            f.classList.remove('hidden');
+            all.classList.add('hidden');
+            aye = document.getElementById('M');
+            aye.textContent = `${score}`;
+            applyRainbowEffect('haha');
+            document.body.style.height = '100vh';
+            
+            discord('SaltyIndeed',"happy bday my senile, memory impared, cognitive deteriorated, forgetful, dory-ass, declining mantal acuitit, senior movement, cognitively frail, 4 foot 2, fun-sized, prime dunk on size, compact edition, vertically challenged, low altitude, pint-sized, little bean, too short to use the bar, microscopic, compact DDR buddy :)",'static/images/pfps/john.webp');
+        
         default:
             break;
     }
@@ -133,4 +142,39 @@ async function discord(name,text,img_path) {
     d_text.textContent = `${text}`;
     d_name.textContent = `${name}`;
     d_img.src = `${img_path}`;
+}
+
+function startt() {
+    let s = document.getElementById('front');
+    s.classList.add('hidden');
+    all.classList.remove('hidden');
+}
+
+
+function applyRainbowEffect(elementId) {
+    var rainbowText = document.getElementById(elementId);
+
+    if (rainbowText) {
+        var text = rainbowText.innerText;
+        var colors = ['#ff0000', '#ff9900', '#ffff00', '#33cc33', '#3399ff', '#9933ff', '#ff33cc'];
+        var interval = 500; // Change color every 500 milliseconds
+        var index = 0;
+
+        function updateColors() {
+            var spannedText = '';
+
+            for (var i = 0; i < text.length; i++) {
+                var char = text.charAt(i);
+                var color = colors[(i + index) % colors.length];
+                spannedText += '<span style="color: ' + color + ';">' + char + '</span>';
+            }
+
+            rainbowText.innerHTML = spannedText;
+            index = (index + 1) % colors.length;
+        }
+
+        // Initial call and setup the interval
+        updateColors();
+        setInterval(updateColors, interval);
+    }
 }
