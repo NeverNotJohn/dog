@@ -60,7 +60,7 @@ function correct(button) {
 
     switch (index) {
         case 2:
-            discord('Brittney',"Hello World",'static/images/art/brittney.jpg');
+            discord('Brittney',"Happy birthday Cathy, I wish you a million miniature cakes and balloons!",'static/images/pfps/brittney.webp');
             cat_frances.classList.remove('hidden');
             jo_frances.classList.remove('hidden');
             break;
@@ -69,6 +69,7 @@ function correct(button) {
             jo_george.classList.remove('hidden');
             break;
         case 4:
+            discord('superooof',"\"Happy birthday Cathy! You should try playing a level that corresponds to your age lol\"  (idk is she turning 19 or 20?) (is this good enough of a message, or is it meant to be longer, or...?)",'static/images/pfps/george.webp')
             cat_carlos.classList.remove('hidden');
             jo_carlos.classList.remove('hidden');
             break;
@@ -89,6 +90,7 @@ function correct(button) {
             jo_ray.classList.remove('hidden');
             break;
         case 9:
+            discord('raay',"Happy birthday, but i'm still waiting to get picked up",'static/images/pfps/ray.webp');
             cat_trescal.classList.remove('hidden');
             jo_trescal.classList.remove('hidden');
             break;
@@ -96,6 +98,8 @@ function correct(button) {
             cat_nando.classList.remove('hidden');
             jo_nando.classList.remove('hidden');
             break;
+        case 11:
+            discord('SaltyIndeed',"happy bday my senile, memory impared, cognitive deteriorated, forgetful, dory-ass, declining mantal acuitit, senior movement, cognitively frail, 4 foot 2, fun-sized, prime dunk on size, compact edition, vertically challenged, low altitude, pint-sized, little bean, too short to use the bar, microscopic, compact DDR pardner :)",'static/images/pfps/john.webp');
         default:
             break;
     }
