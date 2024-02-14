@@ -6,7 +6,7 @@ let index = 1;
 let kids = new Audio('static/audio/kids.mp3');
 let sad = new Audio('static/audio/sad.mp3');
 let ping = new Audio('static/audio/ping.mp3');
-let music = new Audio('static/sounds/seycara.mp3');
+let music = new Audio('static/audio/seycara.mp3');
 music.loop = true;
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
